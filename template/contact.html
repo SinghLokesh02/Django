@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/form.css">
+    <title>Form in HTML</title>
+  </head>
+  <body>
+    <form action="/contact" method="POST" >
+      {% csrf_token %}
+      <input type="text" name="name" id="name"  placeholder="Enter Name" /><br><br>
+      <input type="email" name="email" id="email"  placeholder="Enter Email" /><br><br>
+ 
+       
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+
+       
+    </form>
+  </body>
+  
+</html>

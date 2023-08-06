@@ -1,0 +1,12 @@
+h2{
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+  }
+  p{
+    font-size: large;
+    background-color: cyan;
+    color:green;
+    text-align: end;
+  }
