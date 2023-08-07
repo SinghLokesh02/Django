@@ -8,7 +8,7 @@
     <title>Form in HTML</title>
   </head>
   <body>
-    <form action="/contact" method="POST" >
+    <form action= "{% url 'contact_form' %}" method="POST" >
       {% csrf_token %}
       <input type="text" name="name" id="name"  placeholder="Enter Name" /><br><br>
       <input type="email" name="email" id="email"  placeholder="Enter Email" /><br><br>

@@ -1,5 +1,5 @@
 from django.shortcuts import render,HttpResponse
-from home.models import contact
+from home.models import Contact
 
 # Create your views here.
 def index(request):
@@ -17,12 +17,12 @@ def about(request):
 def services(request):
     return HttpResponse("this is Services page")
 
-def contact(request):    
+def contact_form(request):    
     # Get Method
     if(request.method =='POST'):
         name = request.POST['name']
         email = request.POST['email']
-        ins = contact(name=name,email=email)
+        ins = Contact(name=name,email=email)
         ins.save()
         print("The data is saved in database")
      
