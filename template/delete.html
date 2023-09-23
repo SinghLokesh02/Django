@@ -1,9 +1,9 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="static/form.css" />
     <title>Form in HTML</title>
     <!-- Bootstrap CSS -->
     <link
@@ -12,19 +12,23 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+
+    <!-- Normal Manually Added CSS file -->
+    <link rel="stylesheet" href="{% static "delete.css" %}">
   </head>
   <body>
     <h1 class="text-center text-danger mx-5 my-5"></h1>
     <form action="{% url 'delete' %}" method="POST" class="mx-5 my-5">
       {% csrf_token %}
-      Enter Name :
-      <input
-        type="text"
-        name="name"
-        id="name"
-        placeholder="Enter Name"
-      /><br /><br />
-      Enter password :
+     <label for="name">Enter Name :</label>
+     <input
+     type="text"
+     name="name"
+     id="name"
+     placeholder="Enter Name"
+     /><br /><br />
+     <label for="password">Enter password :</label>
+      
       <input
         type="password"
         name="password"

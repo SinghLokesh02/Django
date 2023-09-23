@@ -1,9 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login page</title>
+    <title>About page</title>
+    <link rel="stylesheet" href="{% static "about.css" %}" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,6 +17,30 @@
     <h1 class="text-center text-primary mx-5 my-5">
       This is about Page of the Website
     </h1>
+
+    <div class="p1 container">
+      <p id="para1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis,
+        accusantium eius vero totam quisquam explicabo, praesentium voluptate
+        voluptates incidunt quam a animi minus amet obcaecati possimus, dolores
+        fuga neque. Voluptate sed optio illo, assumenda excepturi, minus
+        nesciunt eveniet reprehenderit quaerat vero commodi asperiores provident
+        dolor enim explicabo dolorum. Id, ipsum?
+      </p>
+    </div>
+
+    <div class="p2">
+    <p id="para2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, hic
+      deserunt tempore rerum ut voluptatum magni perspiciatis dolor aut maiores.
+    </p>
+  </div>
+
+  
+    <img src="{% static "logo.jpg" %}" alt="" class="rounded d-block m-auto">
+    <img src="{% static "logo1.jpg" %}" alt="" class="rounded">
+
+    <span>This is Normal span tag and I'm going to style this tag</span>
 
     <!-- Bootstrap Javasrcipt -->
     <script

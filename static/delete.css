@@ -1,0 +1,29 @@
+form{
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px #ccc;
+}
+
+input[type="text"]{
+    border: 2px solid magenta;
+}
+
+input[type="password"]{
+    border: 2px solid cyan;
+}
+
+input::placeholder{
+    color: lime;
+}
+
+label[for="name"]{
+    color: magenta;
+    font-weight: bold;
+}
+
+label[for="password"]{
+    color: cyan;
+    font-weight: bold;
+}
