@@ -4,7 +4,18 @@
 # for creating Django Project
 # django-admin startproject mysite
 
-# python manage.py runserver -> setup with server
+# setup with server
+# python manage.py runserver
+
+# Create App using Django
+# python manage.py startapp {{app_name}}
+
+# Create super user
+# python manage.py createsuperuser
+
+# After creating Database
+# 1) Python manage.py makemigrations
+# 2) python manage.py migrate
 
 
 # python manage.py -> give below command help
